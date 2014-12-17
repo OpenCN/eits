@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+
+    <em:id>eits@opencn.cn</em:id>
+    <em:version>1.1.0</em:version>
+    <em:type>2</em:type>
+    
+	<!-- Front End Metadata -->
+    <em:name>Eye in the Sky</em:name>
+    <em:description>I am the Eye in the Sky, looking at you.</em:description>
+    <em:creator>OpenCN</em:creator>
+    <em:developer>idsfa</em:developer>
+    <em:developer>UltimateDogg</em:developer>
+    <em:developer>Evil0ne</em:developer>
+    <em:homepageURL>https://github.com/OpenCN</em:homepageURL>
+    <em:iconURL>chrome://eits/skin/eye.png</em:iconURL>
+    <em:optionsURL>chrome://eits/content/options.xul</em:optionsURL>
+    <em:unpack>true</em:unpack>
+
+    <!-- Describe the Firefox versions we support -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>4.0</em:minVersion>
+        <em:maxVersion>30.*.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>

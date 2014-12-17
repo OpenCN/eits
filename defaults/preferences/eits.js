@@ -1,0 +1,13 @@
+pref("extensions.eits.cn.debug", false);
+pref("extensions.eits.cn.se.enabled", false);
+pref("extensions.eits.cn.se.datasource", "www.cybernations.net");
+pref("extensions.eits.cn.se.datatarget", "");
+pref("extensions.eits.cn.te.enabled", false);
+pref("extensions.eits.cn.te.datasource","tournament.cybernations.net");
+pref("extensions.eits.cn.te.datatarget", "");
+pref("extensions.eits.cn.cookie.send", false);
+pref("extensions.eits.cn.cookie.domain", "");
+pref("extensions.eits.cn.auth.send", false);
+pref("extensions.eits.cn.auth.user", "");
+pref("extensions.eits.cn.auth.pass", "");
+pref("extensions.eits.cn.exclude.regex", "login.asp");

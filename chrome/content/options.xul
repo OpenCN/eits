@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<prefwindow id="eits-preferences-xul" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" type="prefwindow" title="EitS Options" width="22em">
+    <prefpane id="eits-main-pane" label="Main" image="chrome://eits/skin/ic_settings_24px.svg">
+        <preferences>
+            <preference id="pref-se-enabled" name="extensions.eits.cn.se.enabled" inverted="true" type="bool"/>
+            <preference id="pref-te-enabled" name="extensions.eits.cn.te.enabled" inverted="true" type="bool"/>
+            <preference id="pref-se-datasource" name="extensions.eits.cn.se.datasource" type="string"/>
+            <preference id="pref-se-datatarget" name="extensions.eits.cn.se.datatarget" type="string"/>
+            <preference id="pref-te-datasource" name="extensions.eits.cn.te.datasource" type="string"/>
+            <preference id="pref-te-datatarget" name="extensions.eits.cn.te.datatarget" type="string"/>
+            <preference id="pref-debug-enabled" name="extensions.eits.cn.debug" inverted="false" type="bool"/>
+            <preference id="pref-cookie-enabled" name="extensions.eits.cn.cookie.send" inverted="false" type="bool"/>
+            <preference id="pref-cookie-domain" name="extensions.eits.cn.cookie.domain" type="string"/>
+            <preference id="pref-exclude-regex" name="extensions.eits.cn.exclude.regex" type="string"/>
+        </preferences>
+        <groupbox>
+            <caption label="Debug"/>
+            <vbox flex="1">
+                <checkbox label="Enable Debug Logging" id="eits-debug-enabled" preference="pref-debug-enabled"/>
+            </vbox>
+        </groupbox>
+        <groupbox>
+            <caption label="Collection"/>
+            <vbox flex="1">
+                <checkbox label="Disable SE Collection" id="eits-se-enabled" preference="pref-se-enabled"/>
+                <checkbox label="Disable TE Collection" id="eits-te-enabled" preference="pref-te-enabled"/>
+                <label control="eits-exclude-regex" value="Exclusion Regex:"/>
+                <textbox id="eits-exclude-regex" preference="pref-exclude-regex"/>
+            </vbox>
+        </groupbox>
+        <groupbox>
+            <caption label="Endpoints"/>
+            <vbox flex="1">
+                <label control="eits-se-datasource" value="SE Source URL:"/>
+                <textbox id="eits-se-datasource" preference="pref-se-datasource"/>
+                <label control="eits-se-datatarget" value="SE Target URL:"/>
+                <textbox id="eits-se-datatarget" preference="pref-se-datatarget"/>
+                <label control="eits-te-datasource" value="TE Source URL:"/>
+                <textbox id="eits-te-datasource" preference="pref-te-datasource"/>
+                <label control="eits-te-datatarget" value="TE Target URL:"/>
+                <textbox id="eits-te-datatarget" preference="pref-te-datatarget"/>
+            </vbox>
+        </groupbox>
+    </prefpane>
+    <prefpane id="eits-auth-pane" label="Auth" image="chrome://eits/skin/ic_security_24px.svg">
+        <preferences>
+            <preference id="pref-cookie-enabled" name="extensions.eits.cn.cookie.send" inverted="false" type="bool"/>
+            <preference id="pref-cookie-domain" name="extensions.eits.cn.cookie.domain" type="string"/>
+            <preference id="pref-auth-enabled" name="extensions.eits.cn.auth.send" inverted="false" type="bool"/>
+            <preference id="pref-auth-user" name="extensions.eits.cn.auth.user" type="string"/>
+            <preference id="pref-auth-pass" name="extensions.eits.cn.auth.pass" type="string"/>
+        </preferences>
+        <groupbox>
+            <caption label="Cookie"/>
+            <vbox flex="1">
+                <checkbox label="Include Domain Cookie" id="eits-cookie-enabled" preference="pref-cookie-enabled"/>
+                <label control="eits-cookie-domain" value="Cookie URL:"/>
+                <textbox id="eits-cookie-domain" preference="pref-cookie-domain"/>
+            </vbox>
+        </groupbox>
+        <groupbox>
+            <caption label="HTTP Basic"/>
+            <vbox flex="1">
+                <checkbox label="Include Basic Auth" id="eits-auth-enabled" preference="pref-auth-enabled"/>
+                <label control="eits-auth-user" value="Username:"/>
+                <textbox id="eits-auth-user" preference="pref-auth-user"/>
+                <label control="eits-auth-pass" value="Password:"/>
+                <textbox id="eits-auth-pass" preference="pref-auth-pass"/>
+            </vbox>
+        </groupbox>
+    </prefpane>
+</prefwindow>

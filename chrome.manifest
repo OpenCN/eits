@@ -1,0 +1,5 @@
+content eits chrome/content/
+skin eits classic/1.0 chrome/skin/classic/
+
+# Firefox
+overlay	chrome://browser/content/browser.xul chrome://eits/content/eits.xul
