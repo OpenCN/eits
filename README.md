@@ -2,7 +2,7 @@ eits
 ====
 
 Eye in the Sky - A Mozilla Firefox browser extension for Cybernations that sends page source to a url for [redacted].
-
+You can install it at https://addons.mozilla.org/en-US/firefox/addon/eye-in-the-sky/
 
 Usage
 ====
